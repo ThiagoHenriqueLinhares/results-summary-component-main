@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype"), url(fonts/static/HankenGrotesk-Bold.ttf) format("truetype"), url(fonts/static/HankenGrotesk-ExtraBold.ttf) format("truetype"), url(fonts/static/HankenGrotesk-Medium.ttf) format("truetype");
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.vermelho {
+    background-color: hsl(8, 67%, 93%);
+    color: red;
+}
+
+.amarelo {
+    background-color: hsl(58, 67%, 93%);
+    color: hsl(52, 70%, 50%);
+}
+
+.verde {
+    background-color: hsl(140, 75%, 93%);
+    color: hsl(152, 80%, 42%);
+}
+
+.roxo {
+    background-color: hsl(260, 67%, 90%);
+    color: hsl(260, 70%, 50%);
+}
+
+.textos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 75%;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+}
+
+.carta {
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 10px 20px 30px hsla(241, 100%, 89%, 0.7);
+}
+.carta .carta-resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsl(252, 100%,67%), hsl(241, 81%, 54%));
+    padding: 2rem 3rem;
+    width: 300px;
+    min-width: 300px;
+    border-radius: 1rem;
+}
+.carta .carta-resultado .circulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241,72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2rem;
+}
+.carta .carta-resultado .circulo .grande {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.carta .carta-resultado .circulo .pequeno {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+}
+.carta .carta-resultado h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.carta .carta-resultado p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-size: 0.9rem;
+}
+.carta .carta-sumario {
+    background-color: white;
+    padding: 1rem 0.5rem;
+    width: 300px;
+    border-radius: 0 1rem 1rem 0;
+    padding: 2rem 3rem;
+}
+.carta .carta-sumario .titulo {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.carta .carta-sumario .lista {
+    padding: 1rem 0;
+}
+.carta .carta-sumario .lista .item-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.carta .carta-sumario .lista .item-lista .item-lista-titulo {
+    display: flex;
+    align-items: center;
+}
+.carta .carta-sumario .lista .item-lista .item-lista-titulo .img {
+    margin-right: 0.5rem;
+}
+.carta .carta-sumario .lista .item-lista .item-lista-resultado {
+    color: hsl(224, 30%, 27%);
+}
+.carta .carta-sumario .lista .item-lista .item-lista-resultado span {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+.carta .carta-sumario .btn {
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2rem;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      min-width: 100%;
+    }
+    .card {
+      width: 100%;
+      flex-direction: column;
+    }
+    .card .card-result {
+      width: 100%;
+      border-radius: 0 0 1rem 1rem;
+    }
+    .card .card-summary {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
